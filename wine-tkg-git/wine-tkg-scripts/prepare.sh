@@ -209,7 +209,8 @@ msg2 ''
       msg2 'to delete/move previously built package if in the same dir.'
       msg2 ''
       msg2 '###################################TkG##########was##########here'
-      read -rp "When you are ready, press enter to continue."
+      echo "Building..."
+      sleep 2
 
       if [ -e "$_EXT_CONFIG_PATH" ]; then
         source "$_EXT_CONFIG_PATH" && msg2 "External config loaded" # load external configuration from file again, in case of changes.
